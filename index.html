@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Krishak Mitra</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="chat-container">
+        <div class="chat-header">
+            <button id="menu-btn" class="icon-btn header-btn" title="Open Menu"><i class="fas fa-bars"></i></button>
+            <h2><i class="fas fa-leaf"></i> Krishak Mitra</h2>
+            <button id="header-profile-btn" class="icon-btn header-btn" title="My Profile">
+                <i class="fas fa-user-circle"></i>
+            </button>
+        </div>
+        
+        <div id="chat-menu" class="chat-menu">
+            <div class="menu-section welcome-section">
+                <div class="welcome-text">
+                    <span data-translate-key="welcome">Welcome,</span>
+                    <b id="menu-username">Guest</b>
+                </div>
+            </div>
+            
+            <div class="menu-section">
+                <h4 data-translate-key="faq">Frequently Asked Questions</h4>
+                <div id="faq-container" class="menu-history"></div>
+            </div>
+            
+            <div class="menu-section menu-section-activity">
+                <h4 data-translate-key="activity">Activity</h4>
+                <div id="history-container" class="menu-history"></div>
+            </div>
+            <div class="menu-footer">
+                <div class="menu-section">
+                    <a href="#" class="menu-item" id="settings-btn"><i class="fas fa-cog"></i> <span data-translate-key="settings">Settings</span></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="chat-messages" id="chat-messages"></div>
+
+        <div class="chat-input-form">
+            <div class="input-form-content">
+                <input type="file" id="disease-image-upload" accept="image/*" style="display: none;">
+                <button id="detect-disease-btn" class="detect-disease-container" title="Detect Disease">
+                    <span>Detect Disease</span>
+                </button>
+                <button id="mic-btn" class="icon-btn" title="Use Voice">
+                    <i class="fas fa-microphone"></i>
+                </button>
+                <div class="input-container">
+                    <input type="text" id="user-input" data-translate-key-placeholder="inputPlaceholder" placeholder="Ask a question..." autocomplete="off">
+                    <button id="send-btn" class="icon-btn hidden" title="Send Message">
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="login-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h2 data-translate-key="signIn">Sign In</h2>
+            <form id="login-form">
+                <div class="input-group"><label for="email" data-translate-key="email">Email</label><input type="email" id="email" required></div>
+                <div class="input-group"><label for="password" data-translate-key="password">Password</label><input type="password" id="password" required></div>
+                <button type="submit" class="modal-login-btn" data-translate-key="signIn">Sign In</button>
+            </form>
+        </div>
+    </div>
+    
+    <div id="profile-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h2 data-translate-key="accounts">Accounts</h2>
+            <div id="account-list" class="account-list"></div>
+            <div class="profile-actions">
+                <button id="add-account-btn" class="modal-secondary-btn"><i class="fas fa-plus"></i> <span data-translate-key="addAccount">Add Account</span></button>
+                <button id="logout-btn" class="modal-login-btn" data-translate-key="logout">Logout</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="settings-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            
+            <div class="settings-view" id="settings-main-view">
+                <h2 data-translate-key="settings">Settings</h2>
+                <a href="#" class="menu-item" id="personalise-btn"><i class="fas fa-palette"></i> <span data-translate-key="personalise">Personalise</span></a>
+                <a href="#" class="menu-item" id="manage-profile-btn"><i class="fas fa-user-edit"></i> <span data-translate-key="manageProfile">Manage Profile</span></a>
+                <hr class="modal-divider">
+                <a href="#" class="menu-item" id="clear-chat-btn"><i class="fas fa-trash"></i> <span data-translate-key="clearChat">Clear Chat</span></a>
+            </div>
+
+            <div class="settings-view" id="settings-personalise-view" style="display: none;">
+                <div class="modal-header-nav">
+                    <button id="settings-back-btn" class="back-btn"><i class="fas fa-arrow-left"></i></button>
+                    <h2 data-translate-key="personalise">Personalise</h2>
+                </div>
+                <div class="setting-option">
+                    <span data-translate-key="theme">Theme</span>
+                    <div class="theme-options">
+                        <label><input type="radio" name="theme" value="system" checked><span class="theme-button" data-translate-key="system">System</span></label>
+                        <label><input type="radio" name="theme" value="light"><span class="theme-button" data-translate-key="light">Light</span></label>
+                        <label><input type="radio" name="theme" value="dark"><span class="theme-button" data-translate-key="dark">Dark</span></label>
+                    </div>
+                </div>
+                <div class="setting-option">
+                    <span data-translate-key="language">Language</span>
+                    <select id="language-select" class="language-select">
+                        <option value="system" data-translate-key="systemDefault">System Default</option>
+                        <option value="en">English</option>
+                        <option value="hi">हिन्दी</option>
+                        <option value="ml">മലയാളം</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html> 
