@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Krishak Mitra - Digital Farming Assistant</title>
+    <title data-i18n="appName">Krishi Budhhi</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="style.css">
     <script>
@@ -20,7 +20,7 @@
         <div class="p-4 flex justify-between items-center border-b dark:border-gray-700">
              <a href="index.html" class="flex items-center space-x-2">
                 <img src="https://i.pinimg.com/474x/8c/37/44/8c3744ff2025fbffa4184cb8be6b4c5a.jpg" alt="Leaf Icon" class="w-8 h-8 rounded-full object-cover">
-                <span class="font-bold text-xl text-gray-800 dark:text-white">Krishak Mitra</span>
+                <span class="font-bold text-xl text-gray-800 dark:text-white" data-translate="appName">Krishi Budhhi</span>
             </a>
             <button id="close-menu-btn" class="p-2 rounded-full hover:bg-gray-200 dark:hover:bg-gray-700">
                 <svg class="w-6 h-6 text-gray-600 dark:text-gray-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
@@ -29,19 +29,19 @@
         <nav class="p-4 space-y-2">
             <a href="index.html" class="nav-link flex items-center space-x-3 px-3 py-2 rounded-md font-medium text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-700">
                 <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"></path></svg>
-                <span>Home</span>
+                <span data-translate="navigation.home">Home</span>
             </a>
             <a href="disease-detection.html" class="nav-link flex items-center space-x-3 px-3 py-2 rounded-md font-medium text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-700">
-                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"></path></svg>
-                <span>Disease Detection</span>
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 616 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"></path></svg>
+                <span data-translate="navigation.diseaseDetection">Disease Detection</span>
             </a>
             <a href="crop-prediction.html" class="nav-link flex items-center space-x-3 px-3 py-2 rounded-md font-medium text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-700">
-                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7.014A8.003 8.003 0 0117.657 18.657z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.879 16.121A3 3 0 1014.12 11.88l-4.242 4.242z"></path></svg>
-                 <span>Crop Prediction</span>
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 18.657A8 8 0 716.343 7.343S7 9 9 10c0-2 .5-5 2.986-7.014A8.003 8.003 0 0117.657 18.657z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.879 16.121A3 3 0 1014.12 11.88l-4.242 4.242z"></path></svg>
+                 <span data-translate="navigation.cropPrediction">Crop Prediction</span>
             </a>
             <a href="#about" class="nav-link flex items-center space-x-3 px-3 py-2 rounded-md font-medium text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-700">
                  <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
-                <span>About</span>
+                <span data-translate="navigation.about">About</span>
             </a>
         </nav>
     </aside>
@@ -53,53 +53,63 @@
                 <div class="flex items-center">
                     <a href="index.html" class="flex items-center space-x-2 hover:opacity-80 transition-opacity">
                         <img src="https://i.pinimg.com/474x/8c/37/44/8c3744ff2025fbffa4184cb8be6b4c5a.jpg" alt="Leaf Icon" class="w-8 h-8 rounded-full object-cover">
-                        <span class="font-bold text-xl text-white">Krishak Mitra</span>
+                        <span class="font-bold text-xl text-white" data-translate="appName">Krishi Budhhi </span>
                     </a>
                 </div>
                 
                 <!-- Navigation Links - Center -->
                 <div class="hidden md:flex items-center space-x-6">
                     <a href="disease-detection.html" class="flex items-center space-x-2 px-4 py-2 rounded-full text-sm font-medium text-white hover:text-green-200 hover:bg-white/20 transition-all duration-300 transform hover:scale-105">
-                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"></path></svg>
-                        <span>Disease Detection</span>
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 616 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"></path></svg>
+                        <span data-translate="navigation.diseaseDetection">Disease Detection</span>
                     </a>
                     <a href="crop-prediction.html" class="flex items-center space-x-2 px-4 py-2 rounded-full text-sm font-medium text-white hover:text-green-200 hover:bg-white/20 transition-all duration-300 transform hover:scale-105">
-                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 18.657A8 8 0 716.343 7.343S7 9 9 10c0-2 .5-5 2.986-7.014A8.003 8.003 0 0117.657 18.657z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.879 16.121A3 3 0 1014.12 11.88l-4.242 4.242z"></path></svg>
-                        <span>Crop Prediction</span>
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7.014A8.003 8.003 0 0117.657 18.657z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.879 16.121A3 3 0 1014.12 11.88l-4.242 4.242z"></path></svg>                        <span data-translate="navigation.cropPrediction">Crop Prediction</span>
                     </a>
                     <a href="#chat-section" class="flex items-center space-x-2 px-4 py-2 rounded-full text-sm font-medium text-white hover:text-green-200 hover:bg-white/20 transition-all duration-300 transform hover:scale-105">
                         <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
-                        <span>AI Chat</span>
+                        <span data-translate="navigation.aiChat">AI Chat</span>
                     </a>
                 </div>
                 
                 <!-- Profile/User Buttons - Far Right Corner -->
                 <div class="flex items-center space-x-4">
-                    <button id="language-toggle" class="relative w-12 h-6 flex items-center bg-white/20 rounded-full hover:bg-white/30 transition-colors"><span id="lang-en" class="absolute left-1 text-xs font-semibold text-white">EN</span><span id="lang-hi" class="absolute right-1 text-xs font-semibold text-green-200">HI</span><span id="language-toggle-switch" class="w-5 h-5 bg-white rounded-full shadow-md transform transition-transform duration-300"></span></button>
                     <button id="dark-mode-toggle" class="p-2 rounded-full text-white hover:bg-white/20 transition-colors"><svg id="theme-icon-moon" class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"></path></svg><svg id="theme-icon-sun" class="w-5 h-5 hidden" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2m0 16v2M4.93 4.93l1.41 1.41m11.32 11.32l1.41 1.41M2 12h2m16 0h2M6.34 17.66L4.93 19.07m11.32-12.73l1.41-1.41"></path></svg></button>
                     <div class="relative">
                         <button id="profile-button" class="flex items-center space-x-2 px-4 py-2 text-sm font-medium text-white rounded-full hover:bg-white/20 transition-all duration-300 transform hover:scale-105">
                             <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path>
                             </svg>
-                            <span>Profile</span>
+                            <span data-translate="navigation.profile">Profile</span>
                             <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
                             </svg>
                         </button>
-                        <div id="profile-dropdown" class="absolute right-0 mt-2 w-48 bg-white dark:bg-gray-800 rounded-lg shadow-xl border border-gray-200 dark:border-gray-700 z-50 hidden">
+                        <div id="profile-dropdown" class="absolute right-0 mt-2 w-56 bg-white dark:bg-gray-800 rounded-lg shadow-xl border border-gray-200 dark:border-gray-700 z-50 hidden">
                             <div class="py-2">
-                                <button class="flex items-center w-full px-4 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors">
+                                <a href="profile-management.html" class="flex items-center w-full px-4 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors">
+                                    <svg class="w-4 h-4 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path>
+                                    </svg>
+                                    <span data-translate="navigation.profileManagement">Profile Management</span>
+                                </a>
+                                <a href="subscription-management.html" class="flex items-center w-full px-4 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors">
+                                    <svg class="w-4 h-4 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"></path>
+                                    </svg>
+                                    <span data-translate="navigation.manageSubscription">Manage Subscription</span>
+                                </a>
+                                <button id="switch-account-btn" class="flex items-center w-full px-4 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors">
                                     <svg class="w-4 h-4 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4"></path>
                                     </svg>
-                                    Switch Account
+                                    <span data-translate="navigation.switchAccount">Switch Account</span>
                                 </button>
                                 <button id="logout-option" class="flex items-center w-full px-4 py-2 text-sm text-red-600 dark:text-red-400 hover:bg-red-50 dark:hover:bg-red-900/20 transition-colors">
                                     <svg class="w-4 h-4 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1"></path>
                                     </svg>
-                                    Logout
+                                    <span data-translate="navigation.logout">Logout</span>
                                 </button>
                             </div>
                         </div>
@@ -117,14 +127,12 @@
             <div class="relative text-center bg-gray-800 text-white overflow-hidden h-96 md:h-[500px] flex-shrink-0">
                  <div id="slideshow-container" class="absolute inset-0">
                     <!-- Slideshow Images -->
-                    <img src="https://images.pexels.com/photos/974314/pexels-photo-974314.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Smart farming with drone technology" class="slideshow-image w-full h-full object-cover opacity-30 transition-opacity duration-1000 ease-in-out">
-                    <img src="https://images.pexels.com/photos/2132227/pexels-photo-2132227.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Healthy green crops in field" class="slideshow-image w-full h-full object-cover opacity-0 absolute top-0 left-0 transition-opacity duration-1000 ease-in-out">
                     <img src="https://images.pexels.com/photos/1595104/pexels-photo-1595104.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Modern greenhouse farming" class="slideshow-image w-full h-full object-cover opacity-0 absolute top-0 left-0 transition-opacity duration-1000 ease-in-out">
                     <img src="https://images.pexels.com/photos/2518861/pexels-photo-2518861.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="AI-powered crop monitoring" class="slideshow-image w-full h-full object-cover opacity-0 absolute top-0 left-0 transition-opacity duration-1000 ease-in-out">
                 </div>
                 <div class="relative z-10 px-4 flex flex-col justify-center items-center h-full">
-                    <h1 class="text-5xl md:text-7xl font-extrabold tracking-tight bg-gradient-to-r from-green-400 via-emerald-300 to-teal-300 bg-clip-text text-transparent">Krishak Mitra</h1>
-                    <p class="mt-6 text-xl max-w-3xl mx-auto text-gray-200 leading-relaxed">
+                    <h1 class="text-5xl md:text-7xl font-extrabold tracking-tight bg-gradient-to-r from-green-400 via-emerald-300 to-teal-300 bg-clip-text text-transparent" data-translate="home.welcomeTitle">Krishi Budhhi</h1>
+                    <p class="mt-6 text-xl max-w-3xl mx-auto text-gray-200 leading-relaxed" data-translate="home.welcomeSubtitle">
                         Your AI-powered digital farming assistant for disease detection, crop prediction, and smart agricultural solutions.
                     </p>
                 </div>
@@ -134,8 +142,8 @@
             <section id="features-section" class="bg-gradient-to-br from-green-500 via-emerald-600 to-teal-600 dark:from-green-700 dark:via-emerald-800 dark:to-teal-800 py-20">
                 <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div class="text-center mb-16">
-                        <h2 class="text-4xl md:text-5xl font-extrabold text-white mb-6">🌾 Smart Farming Solutions</h2>
-                        <p class="text-xl text-green-100 max-w-3xl mx-auto">Harness the power of AI to revolutionize your farming practices with cutting-edge technology.</p>
+                        <h2 class="text-4xl md:text-5xl font-extrabold text-white mb-6" data-translate="home.featuresTitle">🌾 Smart Farming Solutions</h2>
+                        <p class="text-xl text-green-100 max-w-3xl mx-auto" data-translate="home.featuresSubtitle">Harness the power of AI to revolutionize your farming practices with cutting-edge technology.</p>
                     </div>
                     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                         <!-- Disease Detection Card -->
@@ -147,9 +155,9 @@
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"></path>
                                     </svg>
                                 </div>
-                                <h3 class="text-2xl font-bold text-white mb-4">🔍 Disease Detection</h3>
-                                <p class="text-green-100 mb-6">Upload crop images for instant AI-powered disease identification and treatment recommendations.</p>
-                                <a href="disease-detection.html" class="inline-block bg-white text-green-600 font-semibold py-3 px-6 rounded-full hover:bg-green-50 transition-colors">Try Now</a>
+                                <h3 class="text-2xl font-bold text-white mb-4" data-translate="home.diseaseDetectionTitle">🔍 Disease Detection</h3>
+                                <p class="text-green-100 mb-6" data-translate="home.diseaseDetectionDesc">Upload crop images for instant AI-powered disease identification and treatment recommendations.</p>
+                                <a href="disease-detection.html" class="inline-block bg-white text-green-600 font-semibold py-3 px-6 rounded-full hover:bg-green-50 transition-colors" data-translate="home.tryNow">Try Now</a>
                             </div>
                         </div>
                         
@@ -157,14 +165,13 @@
                         <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-8 hover:bg-white/20 transition-all duration-300 transform hover:scale-105 border border-white/20">
                             <div class="text-center">
                                 <div class="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-6">
-                                    <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 18.657A8 8 0 716.343 7.343S7 9 9 10c0-2 .5-5 2.986-7.014A8.003 8.003 0 0117.657 18.657z"></path>
+                                    <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7.014A8.003 8.003 0 0117.657 18.657z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.879 16.121A3 3 0 1014.12 11.88l-4.242 4.242z"></path></svg>                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 18.657A8 8 0 716.343 7.343S7 9 9 10c0-2 .5-5 2.986-7.014A8.003 8.003 0 0117.657 18.657z"></path>
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.879 16.121A3 3 0 1014.12 11.88l-4.242 4.242z"></path>
                                     </svg>
                                 </div>
-                                <h3 class="text-2xl font-bold text-white mb-4">📊 Crop Prediction</h3>
-                                <p class="text-green-100 mb-6">Get data-driven crop recommendations based on soil conditions, weather, and environmental factors.</p>
-                                <a href="crop-prediction.html" class="inline-block bg-white text-green-600 font-semibold py-3 px-6 rounded-full hover:bg-green-50 transition-colors">Predict Now</a>
+                                <h3 class="text-2xl font-bold text-white mb-4" data-translate="home.cropPredictionTitle">📊 Crop Prediction</h3>
+                                <p class="text-green-100 mb-6" data-translate="home.cropPredictionDesc">Get data-driven crop recommendations based on soil conditions, weather, and environmental factors.</p>
+                                <a href="crop-prediction.html" class="inline-block bg-white text-green-600 font-semibold py-3 px-6 rounded-full hover:bg-green-50 transition-colors" data-translate="home.predictNow">Predict Now</a>
                             </div>
                         </div>
                         
@@ -176,40 +183,111 @@
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"></path>
                                     </svg>
                                 </div>
-                                <h3 class="text-2xl font-bold text-white mb-4">🤖 AI Assistant</h3>
-                                <p class="text-green-100 mb-6">Chat with our intelligent farming assistant for personalized advice and instant answers.</p>
-                                <a href="#chat-section" class="inline-block bg-white text-green-600 font-semibold py-3 px-6 rounded-full hover:bg-green-50 transition-colors">Chat Now</a>
+                                <h3 class="text-2xl font-bold text-white mb-4" data-translate="home.aiAssistantTitle">🤖 AI Assistant</h3>
+                                <p class="text-green-100 mb-6" data-translate="home.aiAssistantDesc">Chat with our intelligent farming assistant for personalized advice and instant answers.</p>
+                                <a href="#chat-section" class="inline-block bg-white text-green-600 font-semibold py-3 px-6 rounded-full hover:bg-green-50 transition-colors" data-translate="home.chatNow">Chat Now</a>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
 
-            <!-- Simplified Chat Section -->
-            <section id="chat-section" class="bg-gradient-to-br from-gray-50 via-green-50/30 to-emerald-50/30 dark:from-gray-900 dark:via-green-900/10 dark:to-emerald-900/10 py-16">
-                <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <div class="bg-white dark:bg-gray-800 rounded-3xl shadow-2xl border border-green-200/50 dark:border-green-700/50 overflow-hidden">
-                        <!-- Greeting Message -->
-                        <div class="p-8 text-center">
-                            <h2 class="text-3xl font-bold text-gray-800 dark:text-white mb-2">Hello Username!</h2>
-                            <p class="text-lg text-gray-600 dark:text-gray-300">How may I help you?</p>
-                        </div>
+            <!-- Chat Section -->
+            <section id="chat-section" class="bg-gradient-to-br from-gray-50 via-green-50/30 to-emerald-50/30 dark:from-gray-900 dark:via-green-900/10 dark:to-emerald-900/10 py-8 sm:py-12">
+                <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 h-[85vh]">
+                    <div class="bg-white dark:bg-gray-800 rounded-3xl shadow-2xl border border-green-200/50 dark:border-green-700/50 overflow-hidden h-full flex flex-col">
                         
-                        <!-- Chat Input -->
-                        <div class="p-6 bg-gray-50 dark:bg-gray-700/50 border-t border-gray-200 dark:border-gray-600">
-                            <form id="chat-form" class="flex items-center space-x-4">
-                                <div class="flex-1 relative">
-                                    <input type="text" id="user-input" placeholder="Ask me about crops, diseases, weather, or farming tips..." class="w-full px-6 py-4 rounded-2xl bg-white dark:bg-gray-800 border-2 border-gray-200 dark:border-gray-600 focus:border-green-500 focus:ring-0 transition-colors text-gray-800 dark:text-white placeholder-gray-500 dark:placeholder-gray-400">
-                                    <div class="absolute right-4 top-1/2 transform -translate-y-1/2 flex space-x-2">
-                                        <button type="button" class="p-2 rounded-full text-gray-400 hover:text-green-500 hover:bg-green-50 dark:hover:bg-green-900/20 transition-colors" title="Voice Input">
-                                            <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3Z"></path><path d="M19 10v2a7 7 0 0 1-14 0v-2"></path><line x1="12" x2="12" y1="19" y2="22"></line></svg>
+                        <!-- Chat Messages -->
+                        <div class="flex-1 overflow-y-auto p-4 sm:p-6" id="chat-messages">
+                            <!-- Welcome Message -->
+                            <div class="flex items-start mb-6">
+                                <div class="w-10 h-10 rounded-full bg-green-100 dark:bg-green-900/30 flex items-center justify-center flex-shrink-0">
+                                    <svg class="w-5 h-5 text-green-600 dark:text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                                    </svg>
+                                </div>
+                                <div class="ml-3 max-w-3xl">
+                                    <div class="bg-gray-100 dark:bg-gray-700 rounded-2xl px-5 py-4 shadow-sm">
+                                        <h4 class="font-semibold text-green-700 dark:text-green-300 mb-2" data-translate="chat.welcomeTitle">Welcome to Krishi Budhhi AI Assistant!</h4>
+                                        <p class="text-sm text-gray-800 dark:text-gray-200 leading-relaxed" data-translate="chat.welcomeMessage">Namaste! I'm your AI farming companion. I can help you with:</p>
+                                        <ul class="list-disc list-inside text-sm text-gray-700 dark:text-gray-300 mt-2 space-y-1">
+                                            <li>Identifying plant diseases from photos</li>
+                                            <li>Recommending crops for your land</li>
+                                            <li>Providing weather forecasts</li>
+                                            <li>Answering farming questions</li>
+                                            <li>Offering sustainable farming tips</li>
+                                        </ul>
+                                        <p class="text-sm text-gray-800 dark:text-gray-200 mt-3" data-translate="chat.howCanIHelp">How can I assist you today?</p>
+                                    </div>
+                                    <p class="text-xs text-gray-500 dark:text-gray-400 mt-1 ml-2">Just now</p>
+                                    
+                                    <!-- Suggested Questions -->
+                                    <div class="mt-3 flex flex-wrap gap-2">
+                                        <button class="suggestion-btn text-xs bg-gray-100 hover:bg-gray-200 dark:bg-gray-700 dark:hover:bg-gray-600 text-gray-800 dark:text-gray-200 px-3 py-1.5 rounded-full transition-colors">
+                                            How to treat leaf curl in tomato plants?
+                                        </button>
+                                        <button class="suggestion-btn text-xs bg-gray-100 hover:bg-gray-200 dark:bg-gray-700 dark:hover:bg-gray-600 text-gray-800 dark:text-gray-200 px-3 py-1.5 rounded-full transition-colors">
+                                            Best crops for black soil?
+                                        </button>
+                                        <button class="suggestion-btn text-xs bg-gray-100 hover:bg-gray-200 dark:bg-gray-700 dark:hover:bg-gray-600 text-gray-800 dark:text-gray-200 px-3 py-1.5 rounded-full transition-colors">
+                                            Current weather forecast for my location
                                         </button>
                                     </div>
                                 </div>
-                                <button type="submit" class="p-4 rounded-2xl bg-gradient-to-r from-green-500 to-emerald-600 text-white hover:from-green-600 hover:to-emerald-700 transition-all duration-300 transform hover:scale-110 shadow-lg">
-                                    <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
-                                </button>
-                            </form>
+                            </div>
+                        </div>
+                        
+                        <!-- Chat Input -->
+                        <div class="p-4 sm:p-6 bg-white dark:bg-gray-800 border-t border-gray-200 dark:border-gray-700">
+                            <form id="chat-form" class="flex items-end gap-3">
+                                <div class="flex-1 relative">
+                                    <div id="file-preview" class="hidden mb-3">
+                                        <div class="flex items-center justify-between bg-green-50 dark:bg-green-900/30 text-green-700 dark:text-green-300 text-sm rounded-lg p-2.5">
+                                            <div class="flex items-center space-x-2">
+                                                <svg class="w-5 h-5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+                                                </svg>
+                                                <span class="text-gray-500 text-xs">(2.4 MB)</span>
+                                            </div>
+                                            <button type="button" class="text-gray-400 hover:text-red-500 transition-colors">
+                                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="relative">
+                                            <input type="text" id="user-input" placeholder="Ask me about crops, diseases, weather, or farming tips..." data-translate="chat.placeholder" class="w-full px-6 py-4 pr-12 rounded-2xl bg-white dark:bg-gray-800 border-2 border-gray-300 dark:border-gray-600 focus:border-green-500 focus:ring-0 transition-colors text-gray-800 dark:text-white placeholder-gray-500 dark:placeholder-gray-400">
+                                            <div class="absolute right-3 top-1/2 transform -translate-y-1/2 flex space-x-1">
+                                                <button type="button" id="file-upload-btn" class="p-2 rounded-full text-gray-400 hover:text-green-500 hover:bg-green-50 dark:hover:bg-green-900/20 transition-colors" title="Attach image">
+                                                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+                                                    </svg>
+{{ ... }}
+                                                <input type="file" id="chat-file-input" class="hidden" accept="image/*">
+                                                <button type="button" id="voice-input-btn" class="p-2 rounded-full text-gray-400 hover:text-green-500 hover:bg-green-50 dark:hover:bg-green-900/20 transition-colors" title="Voice Input">
+                                                    <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                                        <path d="m12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3Z"></path>
+                                                        <path d="M19 10v2a7 7 0 0 1-14 0v-2"></path>
+                                                        <line x1="12" x2="12" y1="19" y2="22"></line>
+                                                    </svg>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button type="submit" class="p-4 rounded-2xl bg-gradient-to-r from-green-500 to-emerald-600 text-white hover:from-green-600 hover:to-emerald-700 transition-all duration-300 transform hover:scale-105 shadow-lg flex-shrink-0">
+                                        <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                            <line x1="22" y1="2" x2="11" y2="13"></line>
+                                            <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                                        </svg>
+                                    </button>
+                                </form>
+                                
+                                <!-- Quick Tips -->
+                                <div class="mt-3 text-center">
+                                    <p class="text-xs text-gray-500 dark:text-gray-400" data-translate="chat.quickTips">Try: "How to increase rice yield?" or "Show me common tomato diseases"</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -219,26 +297,26 @@
             <section id="about-section" class="bg-gradient-to-br from-green-600 via-emerald-700 to-teal-800 py-20">
                 <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div class="text-center mb-16">
-                        <h2 class="text-4xl md:text-5xl font-extrabold text-white mb-6">🌾 About Krishak Mitra</h2>
-                        <p class="text-xl text-green-100 max-w-3xl mx-auto">Empowering farmers with AI-driven technology for sustainable and profitable agriculture.</p>
+                        <h2 class="text-4xl md:text-5xl font-extrabold text-white mb-6" data-translate="about.title">🌾 About Krishi Budhhi</h2>
+                        <p class="text-xl text-green-100 max-w-3xl mx-auto" data-translate="about.subtitle">Empowering farmers with AI-driven technology for sustainable and profitable agriculture.</p>
                     </div>
                     
                     <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
                         <div class="space-y-8">
                             <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-white/20">
-                                <h3 class="text-2xl font-bold text-white mb-4">🎯 Our Mission</h3>
-                                <p class="text-green-100 leading-relaxed">To revolutionize agriculture by providing farmers with intelligent, accessible, and actionable insights that increase productivity, reduce costs, and promote sustainable farming practices.</p>
+                                <h3 class="text-2xl font-bold text-white mb-4" data-translate="about.mission">🎯 Our Mission</h3>
+                                <p class="text-green-100 leading-relaxed" data-translate="about.missionText">To revolutionize agriculture by providing farmers with intelligent, accessible, and actionable insights that increase productivity, reduce costs, and promote sustainable farming practices.</p>
                             </div>
                             
                             <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-white/20">
-                                <h3 class="text-2xl font-bold text-white mb-4">🔬 Our Technology</h3>
-                                <p class="text-green-100 leading-relaxed">Powered by advanced machine learning algorithms, computer vision, and agricultural expertise, Krishak Mitra delivers precise crop recommendations and disease detection capabilities.</p>
+                                <h3 class="text-2xl font-bold text-white mb-4" data-translate="about.technology">🔬 Our Technology</h3>
+                                <p class="text-green-100 leading-relaxed" data-translate="about.technologyText">Powered by advanced machine learning algorithms, computer vision, and agricultural expertise, Krishi Budhhi delivers precise crop recommendations and disease detection capabilities.</p>
                             </div>
                         </div>
                         
                         <div class="space-y-8">
                             <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-white/20">
-                                <h3 class="text-2xl font-bold text-white mb-6">📈 Key Features</h3>
+                                <h3 class="text-2xl font-bold text-white mb-6" data-translate="about.keyFeatures">📈 Key Features</h3>
                                 <ul class="space-y-4 text-green-100">
                                     <li class="flex items-center space-x-3">
                                         <span class="w-2 h-2 bg-green-300 rounded-full"></span>
@@ -264,11 +342,11 @@
                             </div>
                             
                             <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-white/20">
-                                <h3 class="text-2xl font-bold text-white mb-4">🤝 Join Our Community</h3>
-                                <p class="text-green-100 mb-6">Connect with thousands of farmers already using Krishak Mitra to improve their agricultural practices.</p>
+                                <h3 class="text-2xl font-bold text-white mb-4" data-translate="about.joinCommunity">🤝 Join Our Community</h3>
+                                <p class="text-green-100 mb-6" data-translate="about.communityText">Connect with thousands of farmers already using Krishi Budhhi to improve their agricultural practices.</p>
                                 <div class="flex flex-col sm:flex-row gap-4">
-                                    <a href="#chat-section" class="inline-block bg-white text-green-600 font-semibold py-3 px-6 rounded-full hover:bg-green-50 transition-colors text-center">Get Started</a>
-                                    <a href="mailto:support@krishakmitra.com" class="inline-block bg-white/20 text-white font-semibold py-3 px-6 rounded-full hover:bg-white/30 transition-colors text-center border border-white/30">Contact Support</a>
+                                    <a href="#chat-section" class="inline-block bg-white text-green-600 font-semibold py-3 px-6 rounded-full hover:bg-green-50 transition-colors text-center" data-translate="about.getStarted">Get Started</a>
+                                    <a href="mailto:support@krishibudhhi.com" class="inline-block bg-white/20 text-white font-semibold py-3 px-6 rounded-full hover:bg-white/30 transition-colors text-center border border-white/30" data-translate="about.contactSupport">Contact Support</a>
                                 </div>
                             </div>
                         </div>
@@ -278,7 +356,8 @@
         </div>
     </template>
     
+    <script src="i18n.js"></script>
     <script src="script.js"></script>
+    <script src="js/chat.js"></script>
 </body>
 </html>
-
