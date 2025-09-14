@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Crop Prediction - Krishak Mitra</title>
+    <title data-i18n="cropPrediction.title">Crop Prediction - Krishi Budhhi</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="style.css">
     <script>
@@ -28,7 +28,7 @@
         <div class="p-4 flex justify-between items-center border-b dark:border-gray-700">
              <a href="index.html" class="flex items-center space-x-2">
                 <img src="https://i.pinimg.com/474x/8c/37/44/8c3744ff2025fbffa4184cb8be6b4c5a.jpg" alt="Leaf Icon" class="w-8 h-8 rounded-full object-cover">
-                <span class="font-bold text-xl text-gray-800 dark:text-white">Krishak Mitra</span>
+                <span class="font-bold text-xl text-gray-800 dark:text-white" data-translate="appName">Krishi Budhhi</span>
             </a>
             <button id="close-menu-btn" class="p-2 rounded-full hover:bg-gray-200 dark:hover:bg-gray-700">
                 <svg class="w-6 h-6 text-gray-600 dark:text-gray-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
@@ -37,19 +37,19 @@
         <nav class="p-4 space-y-2">
             <a href="index.html" class="nav-link flex items-center space-x-3 px-3 py-2 rounded-md font-medium text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-700">
                  <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"></path></svg>
-                <span>Home / Chat</span>
+                <span data-translate="navigation.home">Home / Chat</span>
             </a>
             <a href="disease-detection.html" class="nav-link flex items-center space-x-3 px-3 py-2 rounded-md font-medium text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-700">
                 <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"></path></svg>
-                <span>Disease Detection</span>
+                <span data-translate="navigation.diseaseDetection">Disease Detection</span>
             </a>
             <a href="crop-prediction.html" class="nav-link flex items-center space-x-3 px-3 py-2 rounded-md font-medium text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-700">
                 <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7.014A8.003 8.003 0 0117.657 18.657z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.879 16.121A3 3 0 1014.12 11.88l-4.242 4.242z"></path></svg>
-                <span>Crop Prediction</span>
+                <span data-translate="navigation.cropPrediction">Crop Prediction</span>
             </a>
             <a href="#about" class="nav-link flex items-center space-x-3 px-3 py-2 rounded-md font-medium text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-700">
                  <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
-                <span>About</span>
+                <span data-translate="navigation.about">About</span>
             </a>
         </nav>
     </aside>
@@ -64,7 +64,7 @@
                     </button>
                     <a href="index.html" class="flex items-center space-x-2 hover:opacity-80 transition-opacity">
                         <img src="https://i.pinimg.com/474x/8c/37/44/8c3744ff2025fbffa4184cb8be6b4c5a.jpg" alt="Leaf Icon" class="w-8 h-8 rounded-full object-cover">
-                        <span class="font-bold text-xl text-white">Krishak Mitra</span>
+                        <span class="font-bold text-xl text-white" data-translate="appName">Krishi Budhhi</span>
                     </a>
                 </div>
                 
@@ -72,41 +72,56 @@
                 <div class="hidden md:flex items-center space-x-6">
                     <a href="disease-detection.html" class="flex items-center space-x-2 px-4 py-2 rounded-full text-sm font-medium text-white hover:text-green-200 hover:bg-white/20 transition-all duration-300 transform hover:scale-105">
                         <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"></path></svg>
-                        <span>Disease Detection</span>
+                        <span data-translate="navigation.diseaseDetection">Disease Detection</span>
                     </a>
                     <a href="crop-prediction.html" class="flex items-center space-x-2 px-4 py-2 rounded-full text-sm font-medium text-green-200 bg-white/20 transition-all duration-300">
                         <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7.014A8.003 8.003 0 0117.657 18.657z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.879 16.121A3 3 0 1014.12 11.88l-4.242 4.242z"></path></svg>
-                        <span>Crop Prediction</span>
+                        <span data-translate="navigation.cropPrediction">Crop Prediction</span>
+                    </a>
+                    <a href="index.html#chat-section" class="flex items-center space-x-2 px-4 py-2 rounded-full text-sm font-medium text-white hover:text-green-200 hover:bg-white/20 transition-all duration-300 transform hover:scale-105">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"></path></svg>
+                        <span data-translate="navigation.aiChat">AI Chat</span>
                     </a>
                 </div>
                 
                 <!-- Profile/User Buttons - Far Right Corner -->
                 <div class="flex items-center space-x-4">
-                    <button id="language-toggle" class="relative w-12 h-6 flex items-center bg-white/20 rounded-full hover:bg-white/30 transition-colors"><span id="lang-en" class="absolute left-1 text-xs font-semibold text-white">EN</span><span id="lang-hi" class="absolute right-1 text-xs font-semibold text-green-200">HI</span><span id="language-toggle-switch" class="w-5 h-5 bg-white rounded-full shadow-md transform transition-transform duration-300"></span></button>
                     <button id="dark-mode-toggle" class="p-2 rounded-full text-white hover:bg-white/20 transition-colors"><svg id="theme-icon-moon" class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"></path></svg><svg id="theme-icon-sun" class="w-5 h-5 hidden" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2m0 16v2M4.93 4.93l1.41 1.41m11.32 11.32l1.41 1.41M2 12h2m16 0h2M6.34 17.66L4.93 19.07m11.32-12.73l1.41-1.41"></path></svg></button>
                     <div class="relative">
                         <button id="profile-button" class="flex items-center space-x-2 px-4 py-2 text-sm font-medium text-white rounded-full hover:bg-white/20 transition-all duration-300 transform hover:scale-105">
                             <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path>
                             </svg>
-                            <span>Profile</span>
+                            <span data-translate="navigation.profile">Profile</span>
                             <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
                             </svg>
                         </button>
-                        <div id="profile-dropdown" class="absolute right-0 mt-2 w-48 bg-white dark:bg-gray-800 rounded-lg shadow-xl border border-gray-200 dark:border-gray-700 z-50 hidden">
+                        <div id="profile-dropdown" class="absolute right-0 mt-2 w-56 bg-white dark:bg-gray-800 rounded-lg shadow-xl border border-gray-200 dark:border-gray-700 z-50 hidden">
                             <div class="py-2">
+                                <button id="profile-management-btn" class="flex items-center w-full px-4 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors">
+                                    <svg class="w-4 h-4 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path>
+                                    </svg>
+                                    <span data-translate="navigation.profileManagement">Profile Management</span>
+                                </button>
+                                <button id="manage-subscription-btn" class="flex items-center w-full px-4 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors">
+                                    <svg class="w-4 h-4 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"></path>
+                                    </svg>
+                                    <span data-translate="navigation.manageSubscription">Manage Subscription</span>
+                                </button>
                                 <button class="flex items-center w-full px-4 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors">
                                     <svg class="w-4 h-4 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4"></path>
                                     </svg>
-                                    Switch Account
+                                    <span data-translate="navigation.switchAccount">Switch Account</span>
                                 </button>
                                 <button id="logout-option" class="flex items-center w-full px-4 py-2 text-sm text-red-600 dark:text-red-400 hover:bg-red-50 dark:hover:bg-red-900/20 transition-colors">
                                     <svg class="w-4 h-4 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1"></path>
                                     </svg>
-                                    Logout
+                                    <span data-translate="navigation.logout">Logout</span>
                                 </button>
                             </div>
                         </div>
@@ -119,10 +134,10 @@
      <main class="min-h-screen w-full flex items-center justify-center pt-24 pb-12 px-4 relative z-10">
         <div class="w-full max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
             <div class="text-center md:text-left">
-                <h1 class="text-4xl lg:text-5xl font-extrabold bg-gradient-to-r from-green-600 via-emerald-600 to-teal-600 bg-clip-text text-transparent">Data-Driven Crop Prediction</h1>
-                <p class="mt-4 text-lg text-gray-700 dark:text-gray-300">Enter your farm's environmental data to receive a prediction for the most suitable crops to plant for the upcoming season.</p>
+                <h1 class="text-4xl lg:text-5xl font-extrabold text-gray-800 dark:text-white" data-translate="cropPrediction.title">Smart Crop Prediction</h1>
+                <p class="mt-4 text-lg text-gray-600 dark:text-gray-400" data-translate="cropPrediction.subtitle">Get AI-powered recommendations for the best crops to grow based on your soil, climate, and location data.</p>
                 <div class="mt-6 p-4 bg-gradient-to-r from-blue-100 to-cyan-100 dark:from-blue-900/50 dark:to-cyan-900/50 border-l-4 border-blue-500 rounded-r-lg shadow-lg">
-                    <p class="text-blue-800 dark:text-blue-200 font-medium">💡 Accurate data leads to better predictions. Use soil test reports and reliable weather data for best results.</p>
+                    <p class="text-blue-800 dark:text-blue-200 font-medium"> Accurate data leads to better predictions. Use soil test reports and reliable weather data for best results.</p>
                 </div>
             </div>
 
@@ -139,13 +154,13 @@
                         </h3>
                         <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
                             <div>
-                                <label for="location" class="block text-sm font-medium text-gray-700 dark:text-gray-300">Location/Region</label>
-                                <input type="text" id="location" class="mt-1 p-2 block w-full rounded-md bg-white dark:bg-gray-700 border border-gray-300 dark:border-gray-600 focus:border-blue-500 focus:ring-1 focus:ring-blue-500" placeholder="e.g., Punjab, India">
+                                <label for="location" class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2" data-translate="cropPrediction.location">Location</label>
+                                <input type="text" id="location" data-translate-placeholder="cropPrediction.locationPlaceholder" placeholder="Enter your city or region" class="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent dark:bg-gray-700 dark:text-white">
                             </div>
                             <div>
-                                <label for="season" class="block text-sm font-medium text-gray-700 dark:text-gray-300">Season</label>
+                                <label for="season" class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2" data-translate="cropPrediction.season">Season</label>
                                 <select id="season" class="mt-1 p-2 block w-full rounded-md bg-white dark:bg-gray-700 border border-gray-300 dark:border-gray-600 focus:border-blue-500 focus:ring-1 focus:ring-blue-500">
-                                    <option value="">Select Season</option>
+                                    <option value="" data-translate="cropPrediction.selectSeason">Select season</option>
                                     <option value="kharif">Kharif (Monsoon)</option>
                                     <option value="rabi">Rabi (Winter)</option>
                                     <option value="zaid">Zaid (Summer)</option>
@@ -157,7 +172,7 @@
                                 <input type="date" id="planting-date" class="mt-1 p-2 block w-full rounded-md bg-white dark:bg-gray-700 border border-gray-300 dark:border-gray-600 focus:border-blue-500 focus:ring-1 focus:ring-blue-500">
                             </div>
                             <div>
-                                <label for="farm-size" class="block text-sm font-medium text-gray-700 dark:text-gray-300">Farm Size (acres)</label>
+                                <label for="farm-size" class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2" data-translate="cropPrediction.farmSize">Farm Size (acres)</label>
                                 <input type="number" step="0.1" id="farm-size" class="mt-1 p-2 block w-full rounded-md bg-white dark:bg-gray-700 border border-gray-300 dark:border-gray-600 focus:border-blue-500 focus:ring-1 focus:ring-blue-500" placeholder="e.g., 5.5">
                             </div>
                         </div>
@@ -185,7 +200,7 @@
                                 <input type="number" id="potassium" class="mt-1 p-2 block w-full rounded-md bg-white dark:bg-gray-700 border border-gray-300 dark:border-gray-600 focus:border-green-500 focus:ring-1 focus:ring-green-500" placeholder="e.g., 43">
                             </div>
                             <div>
-                                <label for="ph" class="block text-sm font-medium text-gray-700 dark:text-gray-300">Soil pH</label>
+                                <label for="soil-type" class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2" data-translate="cropPrediction.soilType">Soil Type</label>
                                 <input type="number" step="0.1" id="ph" class="mt-1 p-2 block w-full rounded-md bg-white dark:bg-gray-700 border border-gray-300 dark:border-gray-600 focus:border-green-500 focus:ring-1 focus:ring-green-500" placeholder="e.g., 6.5">
                             </div>
                         </div>
@@ -215,7 +230,7 @@
                             <div>
                                 <label for="irrigation" class="block text-sm font-medium text-gray-700 dark:text-gray-300">Irrigation Available</label>
                                 <select id="irrigation" class="mt-1 p-2 block w-full rounded-md bg-white dark:bg-gray-700 border border-gray-300 dark:border-gray-600 focus:border-green-500 focus:ring-1 focus:ring-green-500">
-                                    <option value="">Select Option</option>
+                                    <option value="" data-translate="cropPrediction.selectSoilType">Select soil type</option>
                                     <option value="yes">Yes</option>
                                     <option value="no">No</option>
                                     <option value="limited">Limited</option>
@@ -224,7 +239,7 @@
                         </div>
                     </div>
                     <div class="sm:col-span-2 text-center">
-                         <button type="submit" class="mt-2 w-full px-8 py-3 text-white bg-gradient-to-r from-green-500 via-emerald-500 to-teal-500 rounded-full hover:from-green-600 hover:via-emerald-600 hover:to-teal-600 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl font-semibold">🌱 Predict Best Crop</button>
+                         <button id="predict-button" class="w-full mt-6 px-6 py-3 text-white bg-green-600 rounded-lg hover:bg-green-700 transition transform hover:scale-105 font-semibold" data-translate="cropPrediction.getRecommendations">Get Crop Recommendations</button>
                     </div>
                 </form>
                 <div id="crop-result-container" class="mt-6 text-center hidden">
@@ -233,6 +248,7 @@
         </div>
     </main>
 
+    <script src="i18n.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
